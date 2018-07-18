@@ -48,7 +48,7 @@ namespace LemonadeStand
             Console.WriteLine();
             string name = GetUserStringResponse("What is the name of your lemonade stand?");
             int numOfCups = GetUserInegerInput("How many cups will you sell?");
-            double pricePerCup = GetUserInegerInput("How much will you charge per cup?");
+            double pricePerCup = GetUserDoubleInput("How much will you charge per cup?");
             double costPerCup = GetUserDoubleInput("How much will you spend to produce the lemonade?");
 
             Console.WriteLine();
@@ -56,15 +56,17 @@ namespace LemonadeStand
             Console.WriteLine("Recap:");
             Console.WriteLine();
             Console.WriteLine(name + " sounds like a good name for your lemonade stand.");
-            Console.WriteLine("You are going to sell " + numOfCups + " cups of lemonade.");
-            Console.WriteLine("You are charging " + pricePerCup + ".");
-            Console.WriteLine("You are spending " + costPerCup + " on the lemonade.");
+            Console.WriteLine();
+            Console.WriteLine("If you are going to sell " + numOfCups + " cups of lemonade");
+            Console.WriteLine("and you are charging $" + pricePerCup + " ");
+            Console.WriteLine("and it costs you $" + costPerCup + " per cup of lemonade.");
+            Console.WriteLine();
 
+            var revenue = numOfCups * pricePerCup;
+            Console.WriteLine("Then the total amount of money the lemonade stand would bring in is $" + revenue + " ");
 
-
-
-
-
+            var net = revenue - costPerCup * numOfCups;
+            Console.WriteLine("and total profit for the lemonade stand per " + numOfCups + " cups is $" + net + ".");
 
             Console.ReadLine();
         }
