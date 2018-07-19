@@ -7,6 +7,9 @@ namespace LemonadeStand
         public int numOfCups { get; set; }
         public double pricePerCup { get; set; }
         public double costPerCup { get; set; }
+        public double revenue { get; set; }
+        public double totalExpenses { get; set; }
+        public double totalProfit { get; set; }
 
         public string GetUserStringResponse(string question)
         {
