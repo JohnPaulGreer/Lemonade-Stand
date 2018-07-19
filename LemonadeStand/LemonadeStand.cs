@@ -1,15 +1,25 @@
 ﻿using System;
 namespace LemonadeStand
 {
-    class LemonadeStand
+    public class LemonadeStand
     {
 		public string name  { get; set; }
         public int numOfCups { get; set; }
         public double pricePerCup { get; set; }
         public double costPerCup { get; set; }
-        public double revenue { get; set; }
-        public double totalExpenses { get; set; }
-        public double totalProfit { get; set; }
+
+        public double totalRevenue()
+        {
+            return numOfCups * pricePerCup;
+        }
+        public double totalExpenses()
+        {
+            return numOfCups * costPerCup;
+        }
+        public double totalProfit()
+        {
+            return totalRevenue() - totalExpenses();
+        }
 
         public string GetUserStringResponse(string question)
         {
