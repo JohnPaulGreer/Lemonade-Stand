@@ -16,5 +16,25 @@ namespace LemonadeStand
             }
             return grandTotal;
         }
+
+        public double GetTotalExpense()
+        {
+            double grandTotal = 0;
+            foreach (LemonadeStand location in Locations)
+            {
+                grandTotal += location.totalExpenses();
+            }
+            return grandTotal;
+        }
+
+        public double GetTotalProfit()
+        {
+            double grandTotal = 0;
+            foreach (LemonadeStand location in Locations)
+            {
+                grandTotal += location.totalProfit();
+            }
+            return grandTotal;
+        }
     }
 }
