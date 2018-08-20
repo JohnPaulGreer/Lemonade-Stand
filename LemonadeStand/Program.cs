@@ -21,18 +21,18 @@ namespace LemonadeStand
                 Console.WriteLine("What is the name of location " + (i + 1) + "?");
                 lemonadeStand.name = Console.ReadLine();
 
-                lemonadeStand.numOfCups = lemonadeStand.GetUserInegerInput("How many cups will you sell?");
-                lemonadeStand.pricePerCup = lemonadeStand.GetUserDoubleInput("How much will you charge per cup?");
-                lemonadeStand.costPerCup = lemonadeStand.GetUserDoubleInput("How much will you spend on lemonade?");
+                lemonadeStand.numOfItems = lemonadeStand.GetUserInegerInput("How many cups will you sell?");
+                lemonadeStand.pricePerItem = lemonadeStand.GetUserDoubleInput("How much will you charge per cup?");
+                lemonadeStand.costPerItem = lemonadeStand.GetUserDoubleInput("How much will you spend on lemonade?");
 
                 Console.WriteLine();
                 Console.WriteLine("After calculating all of your inputs...");
                 Console.WriteLine();
                 Console.WriteLine(lemonadeStand.name + " sounds like a good name for this stand.");
                 Console.WriteLine();
-                Console.WriteLine("If you are going to sell " + lemonadeStand.numOfCups + " cups of lemonade");
-                Console.WriteLine("and you are charging $" + lemonadeStand.pricePerCup + " ");
-                Console.WriteLine("and it costs you $" + lemonadeStand.costPerCup + " per cup of lemonade.");
+                Console.WriteLine("If you are going to sell " + lemonadeStand.numOfItems + " cups of lemonade");
+                Console.WriteLine("and you are charging $" + lemonadeStand.pricePerItem + " ");
+                Console.WriteLine("and it costs you $" + lemonadeStand.costPerItem + " per cup of lemonade.");
                 Console.WriteLine();
                 Console.WriteLine("This stand's revenue will be $" + lemonadeStand.totalRevenue());
                 Console.WriteLine("This stand's expenses will be $" + lemonadeStand.totalExpenses());
@@ -56,18 +56,18 @@ namespace LemonadeStand
                 Console.WriteLine("What is the name of location " + (i + 1) + "?");
                 popsicleStand.name = Console.ReadLine();
 
-                popsicleStand.numOfPopsicles = popsicleStand.GetUserInegerInput("How many popsicles will you sell?");
-                popsicleStand.pricePerPopsicle = popsicleStand.GetUserDoubleInput("How much will you charge per popsicle?");
-                popsicleStand.costPerPopsicle = popsicleStand.GetUserDoubleInput("How much will you spend on the popsicles?");
+                popsicleStand.numOfItems = popsicleStand.GetUserInegerInput("How many popsicles will you sell?");
+                popsicleStand.pricePerItem = popsicleStand.GetUserDoubleInput("How much will you charge per popsicle?");
+                popsicleStand.costPerItem = popsicleStand.GetUserDoubleInput("How much will you spend on the popsicles?");
 
                 Console.WriteLine();
                 Console.WriteLine("After calculating all of your inputs...");
                 Console.WriteLine();
                 Console.WriteLine(popsicleStand.name + " sounds like a good name for this stand.");
                 Console.WriteLine();
-                Console.WriteLine("If you are going to sell " + popsicleStand.numOfPopsicles + " popsicles");
-                Console.WriteLine("and you are charging $" + popsicleStand.pricePerPopsicle + " ");
-                Console.WriteLine("and it costs you $" + popsicleStand.costPerPopsicle + " per popsicle.");
+                Console.WriteLine("If you are going to sell " + popsicleStand.numOfItems + " popsicles");
+                Console.WriteLine("and you are charging $" + popsicleStand.pricePerItem + " ");
+                Console.WriteLine("and it costs you $" + popsicleStand.costPerItem + " per popsicle.");
                 Console.WriteLine();
                 Console.WriteLine("This stand's revenue will be $" + popsicleStand.totalRevenue());
                 Console.WriteLine("This stand's expenses will be $" + popsicleStand.totalExpenses());
